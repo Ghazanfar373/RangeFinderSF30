@@ -274,7 +274,7 @@ public class ArdiunoPort {
            if (Params.getInstance().getReceivingPack()[0] == 0x6A)
                Params.getInstance().extractDownlink(Params.getInstance().getReceivingPack());
         try {
-            Thread.sleep(30);
+            Thread.sleep(10);
         }catch (Exception e){
             e.printStackTrace();
         }

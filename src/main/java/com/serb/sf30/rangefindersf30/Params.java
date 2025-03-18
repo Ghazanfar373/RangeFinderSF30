@@ -29,9 +29,9 @@ public class Params {
     int bufferSize = 11;
     static Preferences pref;
 
-    long millis;
-    int distance;
-    int alarmFlag;
+    volatile long millis;
+    volatile int  distance;
+    volatile int alarmFlag;
 
 
     public long getMillis() {

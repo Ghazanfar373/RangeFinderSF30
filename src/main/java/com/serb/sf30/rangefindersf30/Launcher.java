@@ -85,7 +85,7 @@ public class Launcher extends Application {
         timer = new AnimationTimer() {
             @Override
             public void handle(long now) {
-                if (now > lastTimerCall + 100_000_000L) { //10_000_000_00L
+                if (now > lastTimerCall + 100_000_00L) { //10_000_000_00L   100_000_000L
 
                 tileDistancePlot.setValue(Params.getInstance().getDistance()/100.0);
                 tileDistancePlot.setTitle(Params.getInstance().getDistance()+"");
